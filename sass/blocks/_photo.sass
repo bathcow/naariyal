@@ -1,0 +1,106 @@
+.photo
+  padding-top: 258px
+  padding-bottom: 257px
+  overflow: hidden
+  .recipies-image
+    &__img1
+      left: 290px
+      top: -117px
+    &__img2
+      right: -170px
+      top: -41px
+    &__img3
+      left: -359px
+      bottom: 210px
+    &__img4
+      right: -394px
+      bottom: 75px
+    &__img5
+      bottom: -205px
+      right: 25px
+    &__img6
+      bottom: -271px
+      left: -230px
+      background-size: 77%
+  &-title
+    font-size: 14px
+    +light
+    color: #3C3C3C
+    margin-bottom: 70px
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    max-width: 1315px
+    justify-content: space-between
+  &-row
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &-rows
+    display: flex
+    flex-wrap: wrap
+    max-width: 768px
+    justify-content: space-between
+  &-big
+    width: 495px
+    height: 436px
+    background: url(../img/photo.svg) no-repeat center center
+    background-size: 153px
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1)
+    background-color: #ffffff
+    margin-bottom: 43px
+  &-little
+    width: 225px
+    height: 196px
+    background: url(../img/photo.svg) no-repeat center center
+    background-size: 70px
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1)
+    background-color: #ffffff
+
+
+
+
+
+
+@media screen and (max-width: 1919px)
+  .photo
+    padding-top: calc(100vw / 7.44186047)
+    padding-bottom: calc(100vw / 7.47081712)
+    .recipies-image
+      &__img1
+        left: calc(100vw / 6.62068966)
+        top: calc(-100vw / 16.4102564)
+      &__img2
+        right: calc(-100vw / 11.2941176)
+        top: calc(-100vw / 46.8292683)
+      &__img3
+        left: calc(-100vw / 5.34818942)
+        bottom: calc(100vw / 9.14285714)
+      &__img4
+        right: calc(-100vw / 4.87309645)
+        bottom: calc(100vw / 25.6)
+      &__img5
+        bottom: calc(-100vw / 9.36585366)
+        right: calc(100vw / 76.8)
+      &__img6
+        bottom: calc(-100vw / 7.08487085)
+        left: calc(-100vw / 8.34782609)
+        background-size: 77%
+    &-title
+      font-size: calc(100vw / 137.142857)
+      margin-bottom: calc(100vw / 27.4285714)
+    &-wrapper
+      max-width: calc(100vw / 1.46007605)
+    &-row
+      width: 100%
+    &-rows
+      max-width: calc(100vw / 2.5)
+    &-big
+      width: calc(100vw / 3.87878788)
+      height: calc(100vw / 4.40366972)
+      background-size: calc(100vw / 12.5490196)
+      margin-bottom: calc(100vw / 44.6511628)
+    &-little
+      width: calc(100vw / 8.53333333)
+      height: calc(100vw / 9.7959184)
+      background-size: calc(100vw / 27.4285714)

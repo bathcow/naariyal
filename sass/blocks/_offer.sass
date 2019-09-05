@@ -1,0 +1,204 @@
+.offer
+  overflow: hidden
+  padding-bottom: 340px
+  padding-top: 238px
+  &-circle
+    position: absolute
+    background: url(../img/circle-bg.svg) no-repeat center center
+    background-size: 100%
+    width: 1212px
+    height: 1122px
+    z-index: -1
+    top: -225px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+    &__left
+      max-width: 737px
+    &__right
+      position: relative
+      width: 953px
+      height: 650px
+      &_chips
+        position: absolute
+        background: url(../img/offer-chips.png) no-repeat center top
+        background-size: cover
+        width: 975px
+        height: 573px
+        left: 26px
+        top: -122px
+      &_oil
+        position: absolute
+        background: url(../img/offer-oil.png) no-repeat center top
+        background-size: cover
+        width: 407px
+        height: 373px
+        bottom: 16px
+        left: 89px
+      &_coconut
+        position: absolute
+        background: url(../img/offer-coconut.png) no-repeat center top
+        background-size: cover
+        width: 546px
+        height: 303px
+        bottom: 23px
+        right: -259px
+  &-logo
+    margin-bottom: 34px
+    width: 360px
+    height: 96px
+    background: url(../img/logo-second.svg) no-repeat center top
+    background-size: cover
+  &-title
+    margin-bottom: 41px
+    +caveat
+    font-size: 40px
+    color: #0D4156
+  &-subtitle
+    +roman
+    font-size: 16px
+    color: #3C3C3C
+    line-height: 140%
+    &__margin
+      margin-bottom: 44px
+
+
+
+@media screen and (max-width: 1919px)
+  .offer
+    padding-bottom: calc(100vw / 5.64705882)
+    padding-top: calc(100vw / 8.06722789)
+    &-circle
+      background-size: contain
+      width: calc(100vw / 1.58415842)
+      height: calc(100vw / 1.71122995)
+      top: calc(-100vw / 8.533333333333333)
+    &-wrapper
+      &__left
+        max-width: calc(100vw / 2.60515604)
+      &__right
+        width: calc(100vw / 2.01469045)
+        height: calc(100vw / 2.95384615)
+        &_chips
+          width: calc(100vw / 1.96923077)
+          height: calc(100vw / 3.35078534)
+          left: calc(100vw / 73.8461538)
+          top: calc(-100vw / 15.7377049)
+        &_oil
+          width: calc(100vw / 4.71744472)
+          height: calc(100vw / 5.14745308)
+          bottom: calc(100vw / 120)
+          left: calc(100vw / 21.5730337)
+        &_coconut
+          width: calc(100vw / 3.51648352)
+          height: calc(100vw / 6.33663366)
+          bottom: calc(100vw / 83.4782609)
+          right: calc(-100vw / 7.41312741)
+    &-logo
+      margin-bottom: calc(100vw / 56.4705882)
+      width: calc(100vw / 5.33333333)
+      height: calc(100vw / 20)
+    &-title
+      margin-bottom: calc(100vw / 46.8292683)
+      font-size: calc(100vw / 48)
+    &-subtitle
+      font-size: calc(100vw / 120)
+      &__margin
+        margin-bottom: calc(100vw / 43.6363636)
+
+@media screen and (max-width: 1240px)
+  .offer
+    padding-top: 150px
+    padding-bottom: 165px
+    &-circle
+      width: 702px
+      height: 610px
+      top: -86px
+    &-logo
+      width: 288px
+      height: 73px
+      margin-bottom: 51px
+    &-title
+      font-size: 50px
+    &-subtitle
+      font-size: 14px
+      &__margin
+        margin-bottom: 19px
+    &-wrapper
+      &__left
+        max-width: 1040px
+      &__right
+        width: 625px
+        height: 443px
+        &_chips
+          width: 522px
+          height: 356px
+          transform: rotate(8deg)
+          left: -20px
+          top: 11px
+          background-size: contain
+        &_oil
+          width: 251px
+          height: 240px
+          bottom: 51px
+          left: 50px
+        &_coconut
+          width: 375px
+          height: 194px
+          bottom: -48px
+          right: -153px
+          transform: scaleX(-1)
+
+
+@media screen and (max-width: 480px)
+  .offer
+    padding-top: calc(100vw / 3.72093023)
+    padding-bottom: calc(100vw / 2.58064516)
+    .recipies-button
+      margin-top: calc(100vw / 6.2745098)
+      margin-left: calc(100vw / 16)
+      padding: 29px 14px
+      font-size: calc(100vw / 29.0909091)
+      padding-bottom: calc(100vw / 24.6153846)
+      padding-top: calc(100vw / 35.5555556)
+    &-circle
+      width: calc(100vw / 0.40201005)
+      height: calc(100vw / 0.46444122)
+      top: calc(100vw / 1.02564103)
+      left: calc(-100vw / 1.09589041)
+    &-logo
+      width: calc(100vw / 1.43820225)
+      height: calc(100vw / 5.92592593)
+      margin-left: calc(100vw / 106.666667)
+      margin-bottom: calc(100vw / 0.83333333)
+    &-title
+      margin-bottom: calc(100vw / 12.8)
+      font-size: calc(100vw / 6.4)
+      line-height: 80%
+      text-align: center
+    &-subtitle
+      font-size: calc(100vw / 24.6153846)
+      line-height: 140%
+    &-wrapper
+      &__left
+        min-width: calc(100vw / 1.25984252)
+      &__right
+        &_chips
+          width: calc(100vw / 0.83116883)
+          height: calc(100vw / 0.96385542)
+          -webkit-transform: rotate(8deg)
+          transform: rotate(-2deg)
+          left: calc(-100vw / 0.99688474)
+          top: calc(100vw / 3.90243902)
+        &_oil
+          width: calc(100vw / 1.95121951)
+          height: calc(100vw / 2.16216216)
+          bottom: calc(100vw / 6.2745098)
+          left: calc(-100vw / 1.22605364)
+          top: calc(100vw / 1.55339806)
+        &_coconut
+          width: calc(100vw / 1.19850187)
+          height: calc(100vw / 2.22222222)
+          top: calc(100vw / 1.11498258)
+          right: calc(-100vw / 15.2380952)

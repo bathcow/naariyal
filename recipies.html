@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Рецепты</title>
+</head>
+<body>
+
+	<!-- section header -->
+	<header class="header header-recipies">
+      <div class="container-header">
+      <div class="header-wrapper">
+          <img src="img/logo-color.svg" alt="Логотип" class="header-logo">
+          
+          <div id="burger-screen" class="header-mobile">
+              <ul class="header-list">
+                  <li class="header-list__item">
+                    <a href="index.html" class="header-list__item_link header-list__item_link_black">Главная</a>
+                  </li>
+                  <li class="header-list__item">
+                    <a href="recipies.html" class="header-list__item_link header-list__item_link_black header-list__item_link_active_black">Рецепты</a>
+                  </li>
+                  <li class="header-list__item">
+                    <a href="photo.html" class="header-list__item_link header-list__item_link_black">Фотогаллерея</a>
+                  </li>
+                  <li class="header-list__item">
+                    <a href="#" class="header-list__item_link header-list__item_link_black">О нас</a>
+                  </li>
+                  <li class="header-list__item">
+                    <a href="contacts.html" class="header-list__item_link header-list__item_link_black">Контакты</a>
+                  </li>
+                </ul>
+      
+                <div class="header-mobile__line"></div>
+                    <a href="tel:+74953333333" class="header-mobile__phone">+7 (495) 333-33-33</a>
+                    <p class="header-mobile__subtitle">(с 9:00 до 20:00 по будням)</p>
+                    <div class="header-mobile__social">
+                            <a href="" class="header-social__item header-social__item_black header-social__item_fb"></a>
+                            <a href="" class="header-social__item header-social__item_black header-social__item_twit"></a>
+                            <a href="" class="header-social__item header-social__item_black header-social__item_inst"></a>
+                    </div>
+          </div>
+
+
+
+          <div id="burger" class="header-burger">
+					<span class="header-burger__span"></span>
+				</div>
+ 
+
+
+          <div class="header-social">
+            <a href="" class="header-social__item header-social__item_black header-social__item_fb"></a>
+            <a href="" class="header-social__item header-social__item_black header-social__item_twit"></a>
+            <a href="" class="header-social__item header-social__item_black header-social__item_inst"></a>
+          </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+    	<!-- section recipes -->
+	<section class="recipies recipies_recipies">
+      <div class="container-recipies">
+
+          <div class="recipies-image__img1"></div>
+          <div class="recipies-image__img2"></div>
+          <div class="recipies-image__img3"></div>
+          <div class="recipies-image__img4"></div>
+  
+      <div class="recipies-bar">
+          <ul class="recipies-list">
+              <li class="recipies-list__item recipies-list__item_active">Все рецепты</li>
+              <li class="recipies-list__item">Выпечка</li>
+              <li class="recipies-list__item">Десерты</li>
+              <li class="recipies-list__item">Закуски</li>
+              <li class="recipies-list__item">Напитки</li>
+              <li class="recipies-list__item">Основные блюда</li>
+            </ul>
+      
+  
+              <button class="button recipies-button recipies-button_filter">
+                <div class="recipies-button__img"></div>
+                <span class="recipies-button__text">фильтры</span>
+              </button>
+
+              <div class="recipies-filter">
+                <div class="recipies-time">
+                  <div class="recipies-close"></div>
+                  <p class="recipies-time__title">Время приготовления</p>
+                  <div class="recipies-time__slider">
+                    <div class="recipies-time__slider__circle"></div>
+                    <div class="recipies-time__slider__line"></div>
+                    <div class="recipies-time__slider__circle"></div>
+                    <div class="recipies-time__slider__line-transparent"></div>
+                  </div>
+                  <p class="recipies-time__subtitle">0 минут — 2 часа</p>
+                </div>
+                <div class="recipies-complexity">
+                  <p class="recipies-complexity__title">Сложность:</p>
+                  <div class="recipies-complexity__wrapper">
+                    <div class="recipies-complexity__wrapper__button">
+                      <div class="recipies-complexity__wrapper__img recipies-complexity__wrapper__img_easy"></div>
+                      <span class="recipies-complexity__wrapper__span">Легко</span>
+                    </div>
+                    <div class="recipies-complexity__wrapper__button recipies-complexity__wrapper__button_active">
+                      <div class="recipies-complexity__wrapper__img recipies-complexity__wrapper__img_medium"></div>
+                      <span class="recipies-complexity__wrapper__span">Средне</span>
+                    </div>
+                    <div class="recipies-complexity__wrapper__button recipies-complexity__wrapper__button_active">
+                      <div class="recipies-complexity__wrapper__img recipies-complexity__wrapper__img_hard"></div>
+                      <span class="recipies-complexity__wrapper__span">Сложно</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipies-brand">
+                  <p class="recipies-brand__title">Продукты Наариял:</p>
+                  <div class="recipies-brand__wrapper">
+                    <div class="recipies-brand__button">
+                      <div class="recipies-brand__button__img recipies-brand__button__img_coconut"></div>
+                      <span class="recipies-brand__span">Кокос очищенный</span>
+                    </div>
+                    <div class="recipies-brand__button">
+                      <div class="recipies-brand__button__img recipies-brand__button__img_oil"></div>
+                      <span class="recipies-brand__span">Кокосовое масло</span>
+                    </div>
+                    <div class="recipies-brand__button">
+                      <div class="recipies-brand__button__img recipies-brand__button__img_chips"></div>
+                      <span class="recipies-brand__span">Кокосовые чипсы «классика»</span>
+                    </div>
+                    <div class="recipies-brand__button">
+                      <div class="recipies-brand__button__img recipies-brand__button__img_chips"></div>
+                      <span class="recipies-brand__span">Кокосовые чипсы «чеснок и паприка»</span>
+                    </div>
+                    <div class="recipies-brand__button">
+                      <div class="recipies-brand__button__img recipies-brand__button__img_chips"></div>
+                      <span class="recipies-brand__span">Кокосовые чипсы «медовые»</span>
+                    </div>
+
+
+                    <div class="button recipies-button recipies-button_filter">
+                      <span class="recipies-button__text">Применить</span>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+      </div>
+  
+      <div class="recipies-wrapper recipies-wrapper_recipies">
+  
+        <div class="recipies-wrapper__item">
+          <div class="recipies-wrapper__triangle"></div>
+          <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image1"></div>
+          <div class="recipies-flex">
+              <p class="recipies-wrapper__item__title recipies-wrapper__item__title_blue">Закуски</p>
+              <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+              <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+              <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+              <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+              <div class="recipies-wrapper__item__dosage">
+                <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+              </div>
+              <div class="recipies-wrapper__item__line"></div>
+              <div class="recipies-wrapper__item__icons">
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_coconut"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Кокос NAARIYAL очищенный</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_easy"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Сложность: Легкая</div>
+                </div>
+              </div>
+          </div>
+        </div>
+  
+        <div class="recipies-wrapper__item">
+          <div class="recipies-wrapper__triangle"></div>
+          <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image2"></div>
+          <div class="recipies-flex">
+              <p class="recipies-wrapper__item__title recipies-wrapper__item__title_orange">Основные блюда</p>
+              <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+              <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+              <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+              <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+              <div class="recipies-wrapper__item__dosage">
+                <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+              </div>
+              <div class="recipies-wrapper__item__line"></div>
+              <div class="recipies-wrapper__item__icons">
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_chips"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Чипсы NAARIYAL с паприкой</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_hard"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Сложность: Тяжелая</div>
+                </div>
+              </div>
+          </div>
+        </div>
+  
+        <div class="recipies-wrapper__item">
+          <div class="recipies-wrapper__triangle"></div>
+          <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image3"></div>
+          <div class="recipies-flex">
+              <p class="recipies-wrapper__item__title recipies-wrapper__item__title_pink">Десерты</p>
+              <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+              <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+              <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+              <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+              <div class="recipies-wrapper__item__dosage">
+                <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+              </div>
+              <div class="recipies-wrapper__item__line"></div>
+              <div class="recipies-wrapper__item__icons">
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_oil"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Кокосовое масло NAARIYAL</div>
+                </div>
+                <div class="recipies-wrapper__item__icons__item">
+                  <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_medium"></div>
+                  <div class="recipies-wrapper__item__icons__item__text">Сложность: Средняя</div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="recipies-wrapper__item">
+            <div class="recipies-wrapper__triangle"></div>
+            <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image3"></div>
+            <div class="recipies-flex">
+                <p class="recipies-wrapper__item__title recipies-wrapper__item__title_pink">Десерты</p>
+                <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                <div class="recipies-wrapper__item__dosage">
+                  <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                </div>
+                <div class="recipies-wrapper__item__line"></div>
+                <div class="recipies-wrapper__item__icons">
+                  <div class="recipies-wrapper__item__icons__item">
+                    <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                    <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                  </div>
+                  <div class="recipies-wrapper__item__icons__item">
+                    <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_oil"></div>
+                    <div class="recipies-wrapper__item__icons__item__text">Кокосовое масло NAARIYAL</div>
+                  </div>
+                  <div class="recipies-wrapper__item__icons__item">
+                    <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_medium"></div>
+                    <div class="recipies-wrapper__item__icons__item__text">Сложность: Средняя</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="recipies-wrapper__item">
+              <div class="recipies-wrapper__triangle"></div>
+              <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image1"></div>
+              <div class="recipies-flex">
+                  <p class="recipies-wrapper__item__title recipies-wrapper__item__title_blue">Закуски</p>
+                  <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                  <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                  <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                  <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                  <div class="recipies-wrapper__item__dosage">
+                    <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                  </div>
+                  <div class="recipies-wrapper__item__line"></div>
+                  <div class="recipies-wrapper__item__icons">
+                    <div class="recipies-wrapper__item__icons__item">
+                      <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                      <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                    </div>
+                    <div class="recipies-wrapper__item__icons__item">
+                      <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_coconut"></div>
+                      <div class="recipies-wrapper__item__icons__item__text">Кокос NAARIYAL очищенный</div>
+                    </div>
+                    <div class="recipies-wrapper__item__icons__item">
+                      <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_easy"></div>
+                      <div class="recipies-wrapper__item__icons__item__text">Сложность: Легкая</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          
+            <div class="recipies-wrapper__item">
+                <div class="recipies-wrapper__triangle"></div>
+                <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image2"></div>
+                <div class="recipies-flex">
+                    <p class="recipies-wrapper__item__title recipies-wrapper__item__title_orange">Основные блюда</p>
+                    <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                    <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                    <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                    <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                    <div class="recipies-wrapper__item__dosage">
+                      <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                    </div>
+                    <div class="recipies-wrapper__item__line"></div>
+                    <div class="recipies-wrapper__item__icons">
+                      <div class="recipies-wrapper__item__icons__item">
+                        <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                        <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                      </div>
+                      <div class="recipies-wrapper__item__icons__item">
+                        <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_chips"></div>
+                        <div class="recipies-wrapper__item__icons__item__text">Чипсы NAARIYAL с паприкой</div>
+                      </div>
+                      <div class="recipies-wrapper__item__icons__item">
+                        <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_hard"></div>
+                        <div class="recipies-wrapper__item__icons__item__text">Сложность: Тяжелая</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+
+
+              <div class="recipies-wrapper__item recipies-wrapper__item_mobile">
+                  <div class="recipies-wrapper__triangle"></div>
+                  <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image1"></div>
+                  <div class="recipies-flex">
+                      <p class="recipies-wrapper__item__title recipies-wrapper__item__title_blue">Закуски</p>
+                      <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                      <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                      <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                      <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                      <div class="recipies-wrapper__item__dosage">
+                        <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                      </div>
+                      <div class="recipies-wrapper__item__line"></div>
+                      <div class="recipies-wrapper__item__icons">
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_coconut"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Кокос NAARIYAL очищенный</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_easy"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Сложность: Легкая</div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          
+                <div class="recipies-wrapper__item recipies-wrapper__item_mobile">
+                  <div class="recipies-wrapper__triangle"></div>
+                  <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image2"></div>
+                  <div class="recipies-flex">
+                      <p class="recipies-wrapper__item__title recipies-wrapper__item__title_orange">Основные блюда</p>
+                      <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                      <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                      <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                      <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                      <div class="recipies-wrapper__item__dosage">
+                        <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                      </div>
+                      <div class="recipies-wrapper__item__line"></div>
+                      <div class="recipies-wrapper__item__icons">
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_chips"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Чипсы NAARIYAL с паприкой</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_hard"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Сложность: Тяжелая</div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          
+                <div class="recipies-wrapper__item recipies-wrapper__item_mobile">
+                  <div class="recipies-wrapper__triangle"></div>
+                  <div class="recipies-wrapper__item__image recipies-wrapper__item__image_image3"></div>
+                  <div class="recipies-flex">
+                      <p class="recipies-wrapper__item__title recipies-wrapper__item__title_pink">Десерты</p>
+                      <p class="recipies-wrapper__item__name">Гранола с кусочками кокоса и орехами</p>
+                      <p class="recipies-wrapper__item__description">Быстрый, вкусный и полезный завтрак, который позволит достигнуть идеального баланса витаминов, питательных веществ и длительного</p>
+                      <a href="recipe.html" class="recipies-wrapper__item__link">Посмотреть рецепт полностью</a>
+                      <p class="recipies-wrapper__item__dosage__title">На 100г. блюда</p>
+                      <div class="recipies-wrapper__item__dosage">
+                        <p class="recipies-wrapper__item__dosage__subtitle">Белки: 123 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Жиры: 7 г.    <span style='padding-left:10px;'> </span>|<span style='padding-left:10px;'> </span>    Углеводы: 50 г.</p>
+                      </div>
+                      <div class="recipies-wrapper__item__line"></div>
+                      <div class="recipies-wrapper__item__icons">
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_time"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Приготовление: 5 минут</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_oil"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Кокосовое масло NAARIYAL</div>
+                        </div>
+                        <div class="recipies-wrapper__item__icons__item">
+                          <div class="recipies-wrapper__item__icons__item__icon recipies-wrapper__item__icons__item__icon_medium"></div>
+                          <div class="recipies-wrapper__item__icons__item__text">Сложность: Средняя</div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+  
+      </div>
+  
+  
+      <div class="recipies-navigation">
+          <span class="recipies-navigation__back">Назад</span>
+          <div class="recipies-navigation__steps">
+            <span class="recipies-navigation__step recipies-navigation__step_active">1</span>
+            <span class="recipies-navigation__step">2</span>
+            <span class="recipies-navigation__step">3</span>
+            <span class="recipies-navigation__step">4</span>
+            <span class="recipies-navigation__step">5</span>
+            <span class="recipies-navigation__step">6</span>
+            <span class="recipies-navigation__step">7</span>
+            <span class="recipies-navigation__step">8</span>
+            <span class="recipies-navigation__step">9</span>
+          </div>
+          <span class="recipies-navigation__next">Вперед</span>
+        </div>
+
+    </div>
+
+    
+
+    </section>
+
+
+    	<!-- section footer -->
+	<footer class="footer">
+      <div class="container-footer">
+        <div class="footer-bar">
+          <img src="img/logo.svg" alt="Логотип" class="footer-logo">
+          <ul class="footer-list">
+            <li class="footer-list__item"><a href="#" class="footer-list__item_anchor">главная</a></li>
+            <li class="footer-list__item"><a href="recipies.html" class="footer-list__item_anchor">рецепты</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__item_anchor">фотогаллерея</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__item_anchor">о нас</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__item_anchor">контакты</a></li>
+          </ul>
+          <div class="footer-icon footer-icon_desktop footer-icon_fb"></div>
+          <div class="footer-icon footer-icon_desktop footer-icon_inst"></div>
+          <div class="footer-icon footer-icon_desktop footer-icon_twit"></div>
+        </div>
+  
+        <div class="footer-bar">
+          <p class="footer-text">© 2019  ООО «НААРИЯЛ». Продукция из кокоса. Все права защищены.</p>
+          <div class="footer-tel">
+            <a href="tel:+74956468362" class="footer-tel__anchor">+7 (495) 646-83-62</a>
+            <a href="tel:+74959816881" class="footer-tel__anchor">+7 (495) 981-68-81</a>
+          </div>
+          <p class="footer-subtitle">Горячая линия по всем вопросам и т.д. Что то написать тут.</p>
+
+          <div class="footer-icon footer-icon_tablet footer-icon_fb"></div>
+				<div class="footer-icon footer-icon_tablet footer-icon_inst"></div>
+				<div class="footer-icon footer-icon_tablet footer-icon_twit"></div>
+        </div>
+  
+        <p class="footer-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        
+    </div>
+    </footer>
+  
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+
+<script src="js.js"></script>
+
+</body>
+</html>

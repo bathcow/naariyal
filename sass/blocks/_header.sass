@@ -1,0 +1,381 @@
+.header
+  z-index: 9999999
+  padding-top: 27px
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  &-recipies
+    .header
+      &-logo
+        width: 238px
+        margin-right: 63px
+      &-wrapper
+        padding-left: 42px
+  &-mobile
+    &__phone
+      display: none
+    &__subtitle
+      display: none
+    &__social
+      display: none
+  &-burger
+    display: none
+  &-wrapper
+    display: flex
+    align-items: center
+    position: relative
+    padding-left: 25px
+  &-logo
+    margin-right: 42.86px
+    width: 272px
+    height: 95px
+  &-list
+    display: flex
+    padding: 0
+    margin-top: 29px
+    &__item
+      display: block
+      &_link
+        border: 2px solid transparent
+        +bold
+        font-size: 16px
+        line-height: 16px
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 0 34px
+        padding-top: 11px
+        padding-bottom: 8px
+        margin-right: 18px
+        border-radius: 85px
+        transition: all .3s, padding-top 0s, padding-bottom 0s
+        &:hover
+          background: rgba(255, 255, 255, 0.2)
+          padding-top: 13px
+          padding-bottom: 10px
+        &_active
+          border: 2px solid #FFFFFF
+          border-radius: 85px
+          padding-top: 11px!important
+          padding-bottom: 8px!important
+          &_black
+            border: 2px solid #0D4156
+            border-radius: 85px
+            padding-top: 11px!important
+            padding-bottom: 8px!important
+        &_black
+          color: #0D4156
+          &:hover
+            background: rgba(13, 65, 86, 0.1)
+  &-social
+    position: absolute
+    right: 31px
+    top: 27px
+    &__item
+      &:last-child
+        margin-bottom: 0
+      background-size: cover
+      width: 39.85px
+      height: 40.39px
+      display: block
+      border-radius: 50%
+      margin-bottom: 28.82px
+      &_black
+        border: 1px solid #0D4156
+      &_fb
+        background: url(../img/fb-hover.svg) no-repeat center center
+        background: url(../img/facebook.svg) no-repeat center top
+        background-color: #FFFFFF
+        background-position: center center
+        &:hover
+          background: url(../img/fb-hover.svg) no-repeat center center
+          background-color: #0D4156
+      &_twit
+        background: url(../img/twit-hover.svg) no-repeat center center
+        background: url(../img/twitter.svg) no-repeat center top
+        background-color: #FFFFFF
+        background-position: center center
+        &:hover
+          background: url(../img/twit-hover.svg) no-repeat center center
+          background-color: #0D4156
+      &_inst
+        background: url(../img/inst-hover.svg) no-repeat center center
+        background: url(../img/instagram.svg) no-repeat center top
+        background-color: #FFFFFF
+        background-position: center center
+        &:hover
+          background: url(../img/inst-hover.svg) no-repeat center center
+          background-color: #0D4156
+
+
+
+
+
+
+@media screen and (max-width: 1919px)
+  .header
+    padding-top: calc(100vw / 71.1111111)
+    &-logo
+      margin-right: calc(100vw / 44.7970135)
+      width: calc(100vw / 7.05882353)
+    &-wrapper
+      padding-left: calc(100vw / 76.8)
+    &-recipies
+      .header
+        &-logo
+          width: calc(100vw / 8.06722689)
+          margin-right: calc(100vw / 30.4761905)
+        &-wrapper
+          padding-left: calc(100vw / 45.7142857)
+    &-list
+      &__item
+        &_link
+          font-size: calc(100vw / 120)
+          line-height: 100%
+          padding-top: calc(100vw / 174.545455)
+          padding-bottom: calc(100vw / 240)
+          margin-right: calc(100vw / 106.6666666666667)
+    &-social
+      &__item
+        margin-bottom: calc(100vw / 66.6204025)
+        &_fb
+          background-size: calc(100vw / 120)
+          width: calc(100vw / 48.1806775)
+          height: calc(100vw / 47.5365189)
+          &:hover
+            background-size: calc(100vw / 120)
+        &_twit
+          background-size: calc(100vw / 73.8461538)
+          width: calc(100vw / 48.1806775)
+          height: calc(100vw / 47.5365189)
+          &:hover
+            background-size: calc(100vw / 73.8461538)
+        &_inst
+          background-size: calc(100vw / 87.2727273)
+          width: calc(100vw / 48.1806775)
+          height: calc(100vw / 47.5365189)
+          &:hover
+            background-size: calc(100vw / 87.2727273)
+
+
+
+
+@media screen and (max-width: 1240px)
+  .header
+    padding-top: calc(100vw / 53.9130435)
+    &-logo
+      margin-right: calc(100vw / 32.6315789)
+      max-width: calc(100vw / 5.21008403)
+    &-recipies
+      .header
+        &-logo
+          width: calc(100vw / 5.16736402)
+          margin-right: calc(100vw / 24.7)
+        &-wrapper
+          padding-left: calc(100vw / 82.3333333)
+        &-list
+          margin-top: calc(100vw / 51.4583333)
+          &__item
+            &_link
+              padding-top: calc(100vw / 123.5)
+              padding-bottom: calc(100vw / 137.222222)
+    &-wrapper
+      padding-left: calc(100vw / 77.5)
+    &-list
+      margin-top: calc(100vw / 62)
+      &__item
+        &_link
+          padding: calc(100vw / 137.777778) calc(100vw / 62)
+          font-size: calc(100vw / 112.272727)
+          margin-right: calc(100vw / 82.6666667)
+          padding-top: calc(100vw / 123.5)
+          padding-bottom: calc(100vw / 137.222222)
+    &-social
+      right: calc(100vw / 34.4444444)
+      top: calc(100vw / 31.7948718)
+      &__item
+        margin-bottom: calc(100vw / 44.2857143)
+        &_fb
+          background-size: calc(100vw / 72.9411765)
+          width: calc(100vw / 31)
+          height: calc(100vw / 31)
+        &_twit
+          background-size: calc(100vw / 59.047619)
+          width: calc(100vw / 31)
+          height: calc(100vw / 31)
+        &_inst
+          background-size: calc(100vw / 59.047619)
+          width: calc(100vw / 31)
+          height: calc(100vw / 31)
+
+
+
+@media screen and (max-width: 480px)
+  .header
+    overflow: hidden
+    height: calc(100vw / 0.62015504)
+    &-recipies
+      .header-burger
+        .header-burger__span
+          background: #0D4156
+          &:after
+            background: #0D4156
+          &:before
+            background: #0D4156
+      .header-logo
+        width: auto
+      .header-list
+        margin-top: calc(100vw / 5.92592593)
+    &-mobile
+      z-index: 99
+      width: calc(100vw / 1.12056589)
+      height: calc(100vw / 0.62256809)
+      position: absolute
+      top: calc(-100vw / 45.7142857)
+      right: 0
+      background: #FFFFFF
+      transform: translateX(104%)
+      transition: all .3s
+      &_active
+        transform: translateX(0)
+      &__social
+        display: flex
+        margin-top: calc(100vw / 11.0344828)
+        margin-left: calc(100vw / 11.8518519)
+        .header-social__item
+          margin-right: calc(100vw / 15.2380952)
+      &__line
+        width: calc(100vw / 1.4479638)
+        height: 1px
+        background: #DFDFDF
+        margin-top: calc(100vw / 8.64864865)
+        margin-left: calc(100vw / 11.0344828)
+      &__phone
+        font-size: calc(100vw / 13.3333333)
+        color: #000000
+        +roman
+        margin-top: calc(100vw / 11.4285714)
+        margin-left: calc(100vw / 11.8518519)
+        display: block
+      &__subtitle
+        display: block
+        color: #939393
+        font-size: calc(100vw / 26.6666667)
+        +roman
+        margin-top: calc(100vw / 45.7142857)
+        margin-left: calc(100vw / 11.8518519)
+    &-burger
+      display: block
+      position: absolute
+      top: calc(100vw / 13.9130435)
+      right: calc(100vw / 16.8421053)
+      height: calc(100vw / 40)
+      cursor: pointer
+      z-index: 9999999
+      &__span
+        background: #FFFFFF
+        border-radius: 10px
+        width: calc(100vw / 20)
+        height: 2px
+        display: block
+        position: relative
+        &:after
+          transition: all .3s
+          width: calc(100vw / 20)
+          height: 2px
+          display: block
+          content: ''
+          position: absolute
+          left: 0
+          top: -5px
+          background: #FFFFFF
+        &:before
+          transition: all .3s
+          width: calc(100vw / 20)
+          height: 2px
+          display: block
+          content: ''
+          position: absolute
+          left: 0
+          top: 5px
+          background: #FFFFFF
+      &_active
+        .header-burger__span
+          background: #0D4156
+          height: 0
+          &:after
+            background: #0D4156
+            transform: translateY(5px) rotate(-45deg)
+          &:before
+            background: #0D4156
+            transform: translateY(-5px) rotate(45deg)
+    &-wrapper
+      padding-left: calc(100vw / 80)
+      position: relative
+    &-list
+      display: block
+      margin-top: calc(100vw / 5.92592593)
+      margin-left: calc(100vw / 13.3333333)
+      &__item
+        margin-bottom: calc(100vw / 10)
+        &_link
+          color: #0D4156
+          font-size: calc(100vw / 26.6153846)
+          text-transform: uppercase
+          border: none
+          border-radius: 85px
+          margin: 0
+          &_active
+            padding: 8px 10px
+            border: 2px solid #0D4156
+            padding-top: 8px !important
+            padding-bottom: 8px !important
+            &_black
+              border: 2px solid #0D4156
+              padding: 0 10px
+              padding-top: 8px !important
+              padding-bottom: 8px !important
+    &-logo
+      width: auto
+      margin-right: 0px
+      max-width: calc(100vw / 1.4953271)
+    &-block
+      margin-top: calc(100vw / 6.2745098)
+      &__title
+        font-size: calc(100vw / 6.80851064)
+      &__subtitle
+        width: calc(100vw / 1.8079096)
+        height: calc(100vw / 5.42372881)
+        margin-left: calc(100vw / 29.0909091)
+        margin-bottom: calc(-100vw / 40)
+    &-social
+      top: calc(100vw / 1.4953271)
+      right: calc(100vw / 18.8235294)
+      &__item
+        width: calc(100vw / 10.6666667)
+        height: calc(100vw / 10.6666667)
+        margin-bottom: calc(100vw / 14.3497758)
+        &_fb
+          background-size: 37%
+        &_twit
+          background-size: calc(100vw / 18.8235294)
+        &_inst
+          background-size: calc(100vw / 18.8235294)
+
+
+
+
+
+@media screen and (min-width: 2400px)
+  .header
+    &-logo
+      margin-right: calc(100vw / 7.23338048)
+    &-social
+      right: calc(100vw / 426.166667)
+    &-list
+      &__item
+        &_link
+          margin-right: calc(100vw / 142.055556)
+    &-recipies
+      .header-logo
+        margin-right: calc(100vw / 6.87679083)

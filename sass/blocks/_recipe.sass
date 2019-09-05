@@ -1,0 +1,337 @@
+.recipe
+  padding-top: 205px
+  padding-bottom: 133px
+  &-back
+    display: flex
+    align-items: center
+    margin-top: 60px
+    cursor: pointer
+    width: 173px
+    &__arrow
+      width: 21px
+      height: 15.5px
+      background: url(../img/arrow-back_hover.svg) no-repeat center center
+      background: url(../img/arrow-back.svg) no-repeat center center
+      background-size: contain
+      margin-right: 18px
+      transition: all .2s
+    &__text
+      +avenirbold
+      font-size: 22px
+      color: #0D4156
+      text-transform: uppercase
+      transition: all .2s
+    &:hover
+      .recipe-back__arrow
+        background: url(../img/arrow-back_hover.svg) no-repeat center center
+        background-size: contain
+      .recipe-back__text
+        color: #57A4C2
+  &-flex
+    display: flex
+    margin-bottom: 17px
+  .recipies
+    &-wrapper
+      &__item
+        &__title
+          font-size: 14px
+          margin-left: 9px
+          margin-bottom: 11px
+        &__name
+          font-size: 45px
+          max-width: 100%
+          margin-left: 0
+          margin-bottom: 29px
+        &__image
+          width: 825px
+          height: 487px
+          margin-right: 36px
+        &__description
+          font-size: 14px
+          line-height: 121%
+          max-width: 780px
+          margin-left: 0
+        &__icons
+          flex-direction: column
+          margin-top: 22px
+          height: auto
+          margin-left: 39px
+          &__item
+            align-items: center
+            height: auto
+            justify-content: flex-start
+            margin-top: 22px
+            &__icon
+              margin-bottom: 6px
+              height: 54px
+              &_time
+                width: 65px
+              &_coconut
+                width: 65px
+              &_easy
+                width: 60px
+            &__text
+              font-size: 16px
+              max-width: 125px
+        &__dosage
+          &__title
+            font-size: 18px
+            margin-bottom: 14px
+            &_tablet
+              display: none
+          &__subtitle
+            font-size: 16px
+            margin-bottom: 9px
+            &_tablet
+              display: none
+
+
+@media screen and (max-width: 1919px) and (min-width: 1241px)
+  .recipe
+    padding-top: calc(100vw / 9.36585366)
+    padding-bottom: calc(100vw / 14.4360902)
+    &-back
+      margin-top: calc(100vw / 32)
+      width: calc(100vw / 11.0982659)
+      &__arrow
+        width: calc(100vw / 91.4285714)
+        height: calc(100vw / 123.870968)
+        margin-right: calc(100vw / 106.666667)
+      &__text
+        font-size: calc(100vw / 87.2727273)
+    &-flex
+      margin-bottom: calc(100vw / 112.941176)
+    .recipies
+      &-wrapper
+        &__item
+          &__title
+            font-size: calc(100vw / 137.142857)
+            margin-left: calc(100vw / 213.333333)
+            margin-bottom: calc(100vw / 174.545455)
+          &__name
+            font-size: calc(100vw / 42.6666667)
+            max-width: 100%
+            margin-left: 0
+            margin-bottom: calc(100vw / 66.2068966)
+          &__image
+            width: calc(100vw / 2.32727273)
+            height: calc(100vw / 3.94250513)
+            margin-right: calc(100vw / 53.3333333)
+          &__description
+            font-size: calc(100vw / 137.142857)
+            line-height: 121%
+            max-width: calc(100vw / 2.46153846)
+            margin-left: 0
+          &__icons
+            margin-left: calc(100vw / 49.2307692)
+            &__item
+              margin-top: calc(100vw / 87.2727273)
+              &__icon
+                margin-bottom: calc(100vw / 320)
+                height: calc(100vw / 35.5555556)
+                &_time
+                  width: calc(100vw / 29.5384615)
+                &_coconut
+                  width: calc(100vw / 29.5384615)
+                &_easy
+                  width: calc(100vw / 32)
+              &__text
+                font-size: calc(100vw / 120)
+                max-width: calc(100vw / 15.36)
+          &__dosage
+            &__title
+              font-size: calc(100vw / 106.666667)
+              margin-bottom: calc(100vw / 137.142857)
+            &__subtitle
+              font-size: calc(100vw / 120)
+              margin-bottom: calc(100vw / 213.333333)
+
+
+
+
+
+@media screen and (max-width: 1440px)
+  .recipe
+    .recipies
+      &-wrapper
+        &__item
+          &__description
+            font-size: 14px
+
+
+
+
+
+@media screen and (max-width: 1240px)
+  .recipe
+    padding-top: 137px
+    padding-bottom: 59px
+    &-back
+      margin-top: 39px
+      width: auto
+      &__arrow
+        width: 15.5px
+        height: 11.5px
+        margin-right: 11.5px
+      &__text
+        font-size:  16px
+    &-flex
+      margin-bottom: -3px
+    .recipies
+      &-wrapper
+        &__item
+          &__title
+            font-size: 11px
+            margin-left: 0
+            margin-bottom: 10px
+            padding-top: 6px
+            padding-bottom: 4px
+          &__name
+            font-size: 35px
+            max-width: 100%
+            margin-left: 0
+            margin-bottom: 30px
+            max-width: 565px
+          &__image
+            width: 490px
+            height: 289px
+            margin-right: 40px
+          &__description
+            font-size: 14px
+            line-height: 121%
+            max-width: 688px
+            margin-left: 0
+            margin-bottom: 20px
+          &__icons
+            margin-left: 16px
+            margin-top: -11px
+            &__item
+              margin-top: 10px
+              flex-direction: column
+              margin-bottom: 19px
+              &__icon
+                margin: 0 auto
+                height: 40px
+                margin-bottom: 6px
+                &_time
+                  width: 40px
+                &_coconut
+                  width: 53px
+                &_easy
+                  width: 30px
+              &__text
+                font-size: 14px
+                max-width: 111px
+                text-align: center
+          &__dosage
+            display: none
+            &_tablet
+              display: inline-block
+              margin-bottom: 23px
+            &__title
+              font-size: 14px
+              margin-bottom: 0
+              display: none
+              &_tablet
+                display: inline-block
+                margin-right: 22px
+            &__subtitle
+              font-size: 13px
+              margin-bottom: 0
+              display: none
+              &_tablet
+                display: inline-block
+
+
+
+
+
+
+@media screen and (max-width: 480px)
+  .recipe
+    padding-top: calc(100vw / 2.90909091)
+    padding-bottom: calc(100vw / 3.04761905)
+    &-back
+      margin-top: calc(100vw / 9.14285714)
+      width: auto
+      &__arrow
+        width: calc(100vw / 20.5920206)
+        height: calc(100vw / 27.826087)
+        margin-right: calc(100vw / 27.826087)
+      &__text
+        font-size: calc(100vw / 20)
+    &-flex
+      margin-bottom: calc(100vw / 320)
+      flex-direction: column
+      &__right
+        margin-top: calc(100vw / 24.6153846)
+    .recipies
+      &-wrapper
+        &__item
+          &__title
+            font-size: calc(100vw / 29.09090991)
+            margin-left: 0
+            margin-bottom: calc(100vw / 40)
+            padding-top: calc(100vw / 53.3333333)
+            padding-bottom: calc(100vw / 80)
+          &__name
+            font-size: calc(100vw / 11.8518519)
+            margin-left: 0
+            margin-bottom: calc(100vw / 10.6666667)
+            max-width: calc(100vw / 1.06666667)
+          &__image
+            width: calc(100vw / 1.0720268)
+            height: calc(100vw / 1.81818182)
+            margin-right: 0
+          &__description
+            font-size: calc(100vw / 26.6666667)
+            line-height: 121%
+            max-width: calc(100vw / 1.07744108)
+            margin-left: 0
+            margin-bottom: calc(100vw / 16)
+          &__icons
+            margin-left: 0
+            margin-top: calc(-100vw / 29.0909091)
+            flex-direction: row
+            padding-left: calc(100vw / 18.8235294)
+            &__item
+              margin-top: calc(100vw / 32)
+              flex-direction: row
+              align-items: center
+              margin-bottom: calc(100vw / 16.8421053)
+              margin-right: calc(100vw / 16)
+              &__icon
+                margin: 0 auto
+                height: calc(100vw / 8)
+                margin-bottom: 0
+                background-position: center center
+                margin-right: calc(100vw / 80)
+                &_time
+                  width: calc(100vw / 16.6927491)
+                &_coconut
+                  width: calc(100vw / 10.5263158)
+                &_easy
+                  width: calc(100vw / 16.6233766)
+              &__text
+                font-size: calc(100vw / 35.5555556)
+                max-width: calc(100vw / 4.63768116)
+                text-align: left
+          &__dosage
+            display: none
+            &_tablet
+              display: block
+              margin-bottom: calc(100vw / 13.9130435)
+            &__title
+              font-size: calc(100vw / 22.8571429)
+              margin-bottom: 0
+              display: none
+              &_tablet
+                display: block
+                margin-right: 0
+                margin-bottom: calc(100vw / 26.6666667)
+            &__subtitle
+              font-size: calc(100vw / 26.6666667)
+              margin-bottom: calc(100vw / 53.3333333)
+              display: block
+              &_tablet
+                display: inline-block

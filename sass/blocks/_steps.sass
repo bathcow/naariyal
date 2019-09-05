@@ -1,0 +1,262 @@
+.steps
+  position: relative
+  padding-top: 106px
+  &-container
+    max-width: 1216px
+    margin: 0 auto
+  &-title
+    margin-bottom: 106px
+    +heavy
+    font-size: 28px
+    line-height: 38px
+    text-transform: uppercase
+    text-align: center
+    &__span
+      color: #406896
+  &-image
+    background-size: 100%
+    width: 546px
+    min-width: 546px
+    height: 1079px
+    margin-top: -13px
+  &-block
+    display: flex
+  &-info
+    display: flex
+    max-width: 758px
+    margin-left: -24px
+  &-numbers
+    display: flex
+    flex-direction: column
+    &__item
+      color: rgba(0, 0, 0, 0.05)
+      font-size: 136.264px
+      line-height: 166px
+      +heavy
+      text-align: center
+  &-text
+    padding-top: 3px
+    &__time_text
+      font-size: 12px
+      text-transform: uppercase
+      +reg
+      line-height: 16px
+    &__title
+      font-size: 26px
+      line-height: 35px
+      margin-bottom: 7px
+      +heavy
+    &__subtitle
+      +book
+      font-size: 16px
+      line-height: 22px
+      max-width: 512px
+    &__item
+      margin-bottom: 47px
+      &_margin
+        margin-bottom: 41px
+    &__time
+      display: flex
+      align-items: center
+      margin-bottom: 6px
+      &_image
+        margin-right: 8px
+        margin-left: 2px
+        background: url(../img/clock.svg) no-repeat center center
+        width: 12.5px
+        height: 12.5px
+        background-size: 100%
+    &__link
+      position: relative
+      color: #406896
+      font-size: 18px
+      line-height: 24px
+      margin-top: 36px
+      display: inline-block
+      +bold
+      &:after
+        content: ''
+        position: absolute
+        background: #406896
+        left: 0
+        width: 100%
+        height: 1px
+        bottom: 0
+  &-line
+    margin-left: 4px
+    margin-right: 30px
+    position: relative
+    background: #406896
+    width: 1px
+    min-width: 1px
+    height: 1003px
+    &__delta
+	    border-left: 5px solid transparent
+	    border-right: 5px solid transparent
+	    border-top: 9px solid #406896
+    &__delta
+      position: absolute
+      bottom: -9px
+      left: -4px
+      &_first
+        position: absolute
+        border-left: 16px solid transparent
+        border-right: 16px solid transparent
+        border-top: 29px solid #406896
+        opacity: 0.1
+        bottom: -29px
+        left: -14px
+      &_arrow
+        background: url(../img/arrow.svg) no-repeat center center
+        background-size: 100%
+        position: absolute
+        width: 37px
+        height: 32px
+        bottom: -48px
+        left: -17px
+      &_mask
+        position: absolute
+        border-left: 38px solid transparent
+        border-right: 38px solid transparent
+        border-top: 60px solid #ffffff
+        bottom: -112px
+        left: -36px
+
+    &__circle
+      position: absolute
+      background: #406896
+      width: 9px
+      height: 9px
+      border-radius: 50%
+      &_circle1
+        left: -4px
+        top: 39px
+      &_circle2
+        left: -4px
+        top: 195px
+      &_circle3
+        left: -4px
+        top: 369px
+      &_circle4
+        left: -4px
+        top: 555px
+      &_circle5
+        left: -4px
+        top: 708px
+
+@media screen and (min-width: 481px)
+  .steps
+    &-image
+      background: url(../img/woman.png) no-repeat center center
+
+
+
+
+
+
+@media screen and (max-width: 1010px)
+  
+  .steps
+    padding-top: 85px
+    padding-bottom: 56px
+    &-image
+      min-width: calc(100vw / 1.70666667)
+      height: calc(100vw / 0.86292135)
+      background-size: contain
+      margin-left: calc(-100vw / 6.24390244)
+      margin-right: calc(100vw / 20.2105263)
+      margin-bottom: calc(-100vw / 8.82758621)
+      margin-top: calc(100vw / 11.4626866)
+    &-title
+      margin-bottom: calc(100vw / 9.721519)
+      font-size: calc(100vw / 32)
+    &-line
+      height: 901px
+    &-numbers
+      &__item
+        font-size: calc(100vw / 6.85714286)
+    &-text
+      &__link
+        font-size: calc(100vw / 51.2)
+        margin-top: calc(100vw / 30.72)
+      &__item
+        &_margin
+          margin-bottom: calc(100vw / 13.4736842)
+        &_last
+          margin-bottom: 0
+      &__time
+        &_text
+          font-size: calc(100vw / 78.3673469)
+        &_image
+          width: calc(100vw / 76.8)
+          height: calc(100vw / 76.8)
+      &__title
+        font-size: calc(100vw / 38.4)
+        line-height: calc(100vw / 28.4444444)
+      &__subtitle
+        font-size: calc(100vw / 49.0769231)
+        line-height: calc(100vw / 42.6666667)
+
+
+@media screen and (max-width: 480px)
+  .steps
+    padding-bottom: 85px
+    overflow: hidden
+    &-title
+      font-size: calc(100vw / 13.33333333)
+      line-height: calc(100vw / 10)
+      max-width: calc(100vw / 1.6)
+      text-align: left
+    &-container
+      max-width: calc(100vw / 1.09215017)
+      position: relative
+    &-text
+      &__title
+        font-size: calc(100vw / 17.7777778)
+        line-height: calc(100vw / 12.3076923)
+        margin-bottom: calc(100vw / 45.7142857)
+      &__subtitle
+        font-size: calc(100vw / 22.8571429)
+        line-height: calc(100vw / 16.8421053)
+      &__item
+        margin-bottom: calc(100vw / 6.80851064)
+        &_margin
+          margin-bottom: calc(100vw / 8.20512821)
+      &__link
+        font-size: calc(100vw / 26.6666667)
+        line-height: calc(100vw / 16.8421053)
+        margin-top: 0
+      &__time
+        margin-bottom: calc(100vw / 53.3333333)
+        &_text
+          font-size: calc(100vw / 32.6530612)
+    &-image
+      display: none
+      &__mobile
+        background: url(../img/woman_mobile.png) no-repeat center left 101%
+        position: absolute
+        width: calc(100vw / 2.17687075)
+        height: calc(100vw / 1.53110048)
+        background-size: contain
+        top: 15px
+        right: 0
+    &-numbers
+      display: none
+    &-line
+      height: calc(100vw / 0.31219512)
+      margin-left: 34px
+      margin-right: 26px
+      &__delta
+        &_mask
+          display: none
+      &__circle
+        &_circle1
+          top: calc(100vw / 9.41176471)
+        &_circle2
+          top: calc(100vw / 1.50943396)
+        &_circle3
+          top: calc(100vw / 0.74592075)
+        &_circle4
+          top: calc(100vw / 0.512)
+        &_circle5
+          top: calc(100vw / 0.40816327)

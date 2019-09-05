@@ -1,0 +1,171 @@
+.contacts
+  padding-top: 7px
+  padding-bottom: 215px
+  +trebuchet
+  &-title
+    margin-bottom: 110px
+    text-align: center
+    text-transform: uppercase
+    font-size: 28px
+    line-height: 38px
+    +heavy
+  &-phone
+    display: block
+    color: #000000
+    font-size: 35px
+    line-height: 41px
+    margin-bottom: 4px
+    &__subtitle
+      color: #939393
+      font-size: 14px
+      line-height: 16px
+      display: block
+      margin-bottom: 35px
+  &-mail
+    +trebuchet
+    font-size: 16px
+    color: #406896
+    line-height: 22px
+    &__subtitle
+      color: #939393
+      font-size: 14px
+      line-height: 16px
+      margin-left: auto
+    &__first
+      margin-bottom: 5px
+      display: flex
+      align-items: center
+    &__second
+      display: flex
+      align-items: center
+      .contacts-mail__subtitle
+        width: 212px
+  &-wrapper
+    margin: 0 auto
+    max-width: 858px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__right
+      &__address
+        text-align: right
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        margin-bottom: 46px
+      &__button
+        +trebuchetbold
+        font-size: 16px
+        line-height: 47px
+        height: 47px
+        width: 218px
+        border-radius: 0
+        padding: 0
+        margin: 0
+        border-radius: 15px 0 0 0
+        background: radial-gradient(309px at 100% 50%, #FF411D 0%, #FF842B 100%)
+        &:before
+          display: none
+        &:after
+          display: none
+    &__left
+      &__mail
+        width: 439px
+
+
+
+
+@media screen and (max-width: 1110px)
+  .contacts
+    padding-bottom: 76px
+    &-title
+      font-size: calc(100vw / 27.4285714)
+      margin-bottom: 87px
+    &-phone
+      font-size: calc(100vw / 21.9428571)
+      line-height: calc(100vw / 18.7317073)
+      &__subtitle
+        font-size: calc(100vw / 54.8571429)
+        line-height: calc(100vw / 48)
+    &-mail
+      font-size: calc(100vw / 48)
+      line-height: calc(100vw / 34.9090909)
+      &__subtitle
+        font-size: calc(100vw / 54.8571429)
+        line-height: calc(100vw / 48)
+      &__second
+        .contacts-mail__subtitle
+          width: calc(100vw / 3.62264151)
+    &-wrapper
+      &__left
+        &__mail
+          width: calc(100vw / 1.74943052)
+      &__right
+        &__address
+          font-size: calc(100vw / 48)
+          line-height: calc(100vw / 40.4210526)
+        &__button
+          font-size: calc(100vw / 48)
+          line-height: calc(100vw / 16.3404255)
+          height: calc(100vw / 16.3404255)
+          width: calc(100vw / 3.52293578)
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px)
+  .contacts
+    padding-top: 0
+    padding-bottom: calc(100vw / 4.21052632)
+    &-title
+      font-size: calc(100vw / 13.3333333)
+      margin-bottom: calc(100vw / 4.92307692)
+    &-wrapper
+      flex-direction: column
+      &__left
+        &__mail
+          width: calc(100vw / 1.10344828)
+      &__right
+        margin-right: auto
+        margin-left: auto
+        width: 100%
+        &__address
+          text-align: left
+          font-size: calc(100vw / 20)
+          line-height: calc(100vw / 16.8421053)
+        &__button
+          min-width: 100%
+          font-size: calc(100vw / 20)
+          line-height: calc(100vw / 6.80851064)
+          height: calc(100vw / 6.80851064)
+          width: 100%
+    &-phone
+      font-size: calc(100vw / 11.0344828)
+      line-height: calc(100vw / 9.41176471)
+      margin-bottom: calc(100vw / 53.3333333)
+      &__subtitle
+        font-size: calc(100vw / 22.8571429)
+        line-height: calc(100vw / 20)
+        margin-bottom: calc(100vw / 5.16129032)
+    &-mail
+      font-size: calc(100vw / 15.2380952)
+      margin-left: 0
+      margin-right: auto
+      &__first
+        flex-direction: column-reverse
+        margin-bottom: calc(100vw / 8)
+      &__second
+        flex-direction: column-reverse
+        margin-bottom: calc(100vw / 6.4)
+      &__subtitle
+        margin-left: 0
+        margin-right: auto
+        margin-bottom: calc(100vw / 26.6666667)
+        font-size: calc(100vw / 22.8571429)
+        line-height: calc(100vw / 20)
+          

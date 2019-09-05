@@ -1,0 +1,315 @@
+.hero
+  background: url(../img/hero-bg.jpg) no-repeat center top
+  background-size: cover
+  height: 993px
+  position: relative
+  overflow: hidden
+  &-item1
+    position: absolute
+    left: 29px
+    top: 467px
+  &-item2
+    position: absolute
+    top: 670px
+    left: 535px
+  &-item3
+    position: absolute
+    top: 105px
+    left: 501px
+  &-item4
+    position: absolute
+    top: 391px
+    right: 133px
+  &-item5
+    position: absolute
+    top: 0
+    right: 0
+  &-item6
+    position: absolute
+    top: 616px
+    right: -18px
+  &-item7
+    position: absolute
+    top: 710px
+    right: 240px
+  &-image
+    &__img1
+      background: url(../img/hero-1.png) no-repeat center center
+      background-size: cover
+      width: 553px
+      height: 436px
+    &__img2
+      background: url(../img/hero-2.png) no-repeat center center
+      background-size: cover
+      width: 252px
+      height: 282px
+    &__img3
+      background: url(../img/hero-3.png) no-repeat center center
+      background-size: cover
+      width: 878px
+      height: 674px
+    &__img4
+      background: url(../img/hero-4.png) no-repeat center center
+      background-size: cover
+      width: 389px
+      height: 323px
+    &__img5
+      background: url(../img/hero-5.png) no-repeat center center
+      background-size: cover
+      width: 687px
+      height: 464px
+    &__img6
+      background: url(../img/hero-6.png) no-repeat center center
+      background-size: cover
+      width: 225px
+      height: 224px
+    &__img7
+      background: url(../img/hero-7.png) no-repeat center center
+      background-size: cover
+      width: 405px
+      height: 346px
+  &-border
+    height: 246px
+    width: 100%
+    background: url(../img/line.png) no-repeat bottom
+    background-size: 234%
+    margin-top: -231px
+    position: absolute
+  &-mask
+    position: absolute
+    width: 100%
+    height: 100%
+    background: url(../img/hero-mask.png) no-repeat center top
+    background-size: cover
+    z-index: 0
+  &-block
+    margin-top: 139px
+    display: inline-block
+    transform: rotate(-9.7deg)
+    &__title
+      +caveat
+      font-size: 126.793px
+      line-height: 74.5%
+      color: #FFFFFF
+      display: inline-block
+      letter-spacing: -0.04em
+    &__subtitle
+      background: url(../img/easy.png) no-repeat center top
+      width: 333.5px
+      height: 108.75px
+      transform: rotate(7deg)
+      margin-left: 64px
+      margin-bottom: -35px
+
+@media screen and (min-width: 2468px)
+  .hero
+    &-item3
+      left: 32%
+  
+
+@media screen and (min-width: 2400px)
+  .hero
+    &-item3
+      left: 50%!important
+      transform: translateX(-483px)
+      transform: translateX(-55%)
+    &-item4
+      right: 454px
+    &-item6
+      right: 65px
+    &-item7
+      right: 384px
+    &-image
+      &__img6
+        width: 250px
+
+
+
+@media screen and (min-width: 1921px)
+  .hero
+    background-size: contain
+    background-repeat-x: repeat
+    &-item3
+      left: 26%
+
+@media screen and (min-width: 1920px)
+  .hero
+    &-border
+      height: 512px
+      background-size: 100%
+      margin-top: -325px
+      background: url(../img/line-big.png) no-repeat bottom
+
+@media screen and (max-width: 1919px)
+  .hero
+    height: calc(100vw / 1.93353474)
+    &-block
+      &__title
+        font-size: calc(100vw / 15.1427918)
+      &__subtitle
+        width: calc(100vw / 5.75712144)
+        height: calc(100vw / 17.6551724)
+        background-size: cover
+        margin-left: calc(100vw / 30)
+        margin-bottom: calc(-100vw / 54.8571429)
+    &-item1
+      left: calc(100vw / 66.2068966)
+      top: calc(100vw / 4.11134904)
+    &-item2
+      top: calc(100vw / 2.86567164)
+      left: calc(100vw / 3.58878505)
+    &-item3
+      top: calc(100vw / 18.2857143)
+      left: calc(100vw / 3.83233533)
+    &-item4
+      top: calc(100vw / 4.91048593)
+      right: calc(100vw / 14.4360902)
+    &-item5
+      top: 0
+      right: 0
+    &-item6
+      top: calc(100vw / 3.11688312)
+      right: calc(-100vw / 106.666667)
+    &-item7
+      top: calc(100vw / 2.70422535)
+      right: calc(100vw / 8)
+    &-image
+      &__img1
+        width: calc(100vw / 3.47197107)
+        height: calc(100vw / 4.40366972)
+      &__img2
+        width: calc(100vw / 7.61904762)
+        height: calc(100vw / 6.80851064)
+      &__img3
+        width: calc(100vw / 2.18678815)
+        height: calc(100vw / 2.84866469)
+      &__img4
+        width: calc(100vw / 4.93573265)
+        height: calc(100vw / 5.94427245)
+      &__img5
+        width: calc(100vw / 2.79475983)
+        height: calc(100vw / 4.13793103)
+      &__img6
+        width: calc(100vw / 8.53333333)
+        height: calc(100vw / 8.57142857)
+      &__img7
+        width: calc(100vw / 4.74074074)
+        height: calc(100vw / 5.54913295)
+
+
+@media screen and (max-width: 1240px)
+  .hero
+    height: calc(100vw / 1.68946648)
+    &-border
+      background: url(../img/line.png) no-repeat bottom left calc(-100vw / 4.07590759)
+      background-size: 194%
+      height: calc(100vw / 5.0203252)
+      margin-top: calc(-100vw / 5.34632035)
+    &-block
+      margin-top: calc(100vw / 10.0406504)
+      &__title
+        font-size: calc(100vw / 15.0609767)
+      &__subtitle
+        width: calc(100vw / 5.06147541)
+        height: calc(100vw / 14.5294118)
+        margin-left: calc(100vw / 102.916667)
+        margin-bottom: 0px
+    &-item1
+      left: calc(-100vw / 17.6428571)
+      top: calc(100vw / 3.04187192)
+    &-item2
+      top: calc(100vw / 3.39222615)
+      left: calc(100vw / 0.00310978)
+    &-item3
+      top: calc(100vw / 11.9902913)
+      left: calc(100vw / 3.90822785)
+    &-item4
+      top: calc(100vw / 3.69760479)
+      right: calc(-100vw / 17.8985507)
+    &-item5
+      top: 0
+      right: calc(-100vw / 13.7222222)
+    &-item6
+      display: none
+    &-item7
+      top: calc(100vw / 2.10391823)
+      right: calc(100vw / 11.1261261)
+      transform: rotate(24deg)
+    &-image
+      &__img1
+        width: calc(100vw / 03.00486618)
+        height: calc(100vw / 3.78834356)
+      &__img2
+        width: calc(100vw / 8.94927536)
+        height: calc(100vw / 6.86111111)
+      &__img3
+        width: calc(100vw / 1.9296875)
+        height: calc(100vw / 2.26199476)
+      &__img4
+        width: calc(100vw / 4.31818182)
+        height: calc(100vw / 5.08230453)
+      &__img5
+        width: calc(100vw / 2.87209302)
+        height: calc(100vw / 3.73111782)
+      &__img6
+        width: calc(100vw / 5.48888889)
+        height: calc(100vw / 5.51339286)
+      &__img7
+        width: calc(100vw / 2.79411765)
+        height: calc(100vw / 3.30213904)
+            
+
+@media screen and (max-width: 480px)
+  .hero
+    height: calc(100vw / 0.52117264)
+    &-block
+      margin-top: calc(100vw / 3.63636364)
+      &__title
+        font-size: calc(100vw / 6.66666667)
+      &__subtitle
+        width: calc(100vw / 2.05128205)
+        height: calc(100vw / 4.92307692)
+        margin-left: calc(100vw / 17.7777778)
+        margin-bottom: calc(-100vw / 18.8235294)
+    &-mask
+      width: 223%
+      height: 100%
+      top: calc(100vw / 1.62436558)
+      left: calc(-100vw / 1.02893891)
+      background: url(../img/hero-mask.png) no-repeat top right calc(-100vw / 2.37037037)
+      background-size: 123%
+    &-border
+      height: calc(100vw / 5.30042918)
+      background-size: 444%
+      margin-top: calc(-100vw / 5.81818182)
+    &-item1
+      display: none
+    &-item2
+      display: none
+    &-item3
+      top: calc(100vw / 1.33891213)
+      left: calc(-100vw / 2.93577982)
+    &-item4
+      display: none
+    &-item5
+      display: none
+    &-item6
+    &-item7
+      top: calc(100vw / 0.6557377)
+      right: calc(-100vw / 4.15584416)
+      transform: rotate(0)
+    &-image
+      &__img3
+        width: calc(100vw / 0.81632653)
+        height: calc(100vw / 0.99688474)
+      &__img7
+        width: calc(100vw / 1.62436548)
+        height: calc(100vw / 1.89349112)
+
+
+
+
+
+
+            
+

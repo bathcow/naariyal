@@ -1,0 +1,227 @@
+.table
+  background: #F3FAFF
+  padding-top: 94px
+  padding-bottom: 68px
+  &-title
+    margin: 0 auto
+    text-align: center
+    font-size: 28px
+    line-height: 38px
+    +heavy
+    max-width: 770px
+    text-transform: uppercase
+    margin-bottom: 73px
+    &__span
+      color: #406896
+  &-bar
+    position: relative
+    height: 80px
+    display: flex
+    width: 100%
+    &_border
+      position: absolute
+      bottom: 0
+      background: url(../img/border-Y.svg)
+      background-position: bottom
+      height: 1px
+      z-index: 9
+      width: 100%
+    &_white
+      background: #ffffff
+    &__first
+      display: flex
+      width: 380px
+      height: 131px
+      &__text
+        color: #406896
+        font-size: 18px
+        line-height: 24px
+        +reg
+        max-width: 310px
+        margin: auto 0
+    &__second
+      position: relative
+      display: flex
+      width: 305px
+      height: 131px
+      &_border
+        &-x
+          z-index: 9
+          position: absolute
+          top: 0
+          left: 0
+          background: url(../img/border-x.svg)
+          background-position: top left
+          height: 691px
+          width: 1px
+          &_second
+            z-index: 9
+            position: absolute
+            top: 0
+            right: 0
+            background: url(../img/border-x.svg)
+            background-position: top left
+            height: 691px
+            width: 1px
+      &__tick
+        background: url(../img/tick.svg) no-repeat center center
+        background-size: 100%
+        width: 20px
+        height: 20px
+        margin: auto
+        &_none
+          background: #327FD7
+          width: 11px
+          height: 2px
+          margin: auto
+    &__third
+      width: 305px
+      height: 131px
+      display: flex
+      position: relative
+    &__main
+      height: 131px
+      background: #406896
+      .table-bar__second
+        background: #327FD7
+        display: block
+      .table-bar__third
+        display: block
+        
+      &_text
+        color: #F3FAFF
+        +reg
+        font-size: 22px
+        line-height: 30px
+        text-align: center
+      &_icon
+        margin: 0 auto
+        margin-top: 28px
+        margin-bottom: 2px
+        &_off
+          background: url(../img/table-off.svg) no-repeat center center
+          background-size: 100%
+          width: 40px
+          height: 44px
+        &_alt
+          background: url(../img/table-alt.svg) no-repeat center center
+          background-size: 100%
+          width: 39.5px
+          height: 38px
+          margin-top: 31px
+          margin-bottom: 5px
+
+@media screen and (max-width: 768px)
+  .table
+    padding-top: 84px
+    &-title
+      font-size: 24px
+      max-width: 650px
+      line-height: 34px
+    &-bar
+      &__main
+        &_text
+          font-size: 18px
+      &__first
+        &__text
+          font-size: 18px
+
+
+
+@media screen and (max-width: 690px)
+  .table
+    padding-top: 25px
+    background: #ffffff
+    &-title
+      line-height: calc(100vw / 10)
+      margin-bottom: 50px
+      max-width: calc(100vw / 0.9375)
+      margin-left: auto
+      margin-right: auto
+      font-size: calc(100vw / 14.83333333)
+    &-bar
+      width: calc(100vw / 1.08843537)
+      height: calc(100vw / 2.51968504)
+      margin: 0 auto
+      border: 2px solid #327FD7
+      margin-top: 14px
+      &_white
+        border: 2px solid #327FD7
+        margin-top: 14px
+      &_border
+        display: none
+      &__main
+        border: none
+        margin: 0 auto
+        height: 100%
+        background: #ffffff
+        .table-bar__first
+          display: none
+        .table-bar__second
+          width: calc(100vw / 2.17687075)
+          height: calc(100vw / 3.63636364)
+        .table-bar__third
+          width: calc(100vw / 2.17687075)
+          height: calc(100vw / 3.63636364)
+          background: #406896
+        &_text
+          font-size: calc(100vw / 22.0689655)
+        &_icon
+          &_off
+            width: calc(100vw / 11.8518519)
+            height: calc(100vw / 11.0344828)
+            margin-top: calc(100vw / 16.8421051)
+            margin-bottom: 0
+          &_alt
+            width: calc(100vw / 12.3076923)
+            height: calc(100vw / 12.8)
+            margin-top: calc(100vw / 16.8421053)
+            margin-bottom: calc(100vw / 80)
+      &__first
+        width: 100%
+        height: calc(100vw / 4.57142857)
+        text-align: center
+        &__text
+          font-size: calc(100vw / 20)
+          max-width: calc(100vw / 1.30081301)
+          text-align: center
+          margin: auto
+      &__second
+        position: relative
+        background: #F3FAFF
+        height: calc(100vw / 6.53061224)
+        width: calc(100vw / 2.25352113)
+        flex-basis: 50%
+        &_mobile
+          &_x
+            position: absolute
+            top: 0
+            right: 0
+            background: url(../img/border-x.svg)
+            background-position: top -8px left
+            height: calc(100vw / 6.4)
+            width: 2px
+          &_y
+            z-index: 999
+            width: calc(100vw / 1.10344828)
+            height: 2px
+            position: absolute
+            top: 0
+            left: 0
+            background: url(../img/border-y.svg)
+            background-position: top left -2px
+        &_border
+          &-x
+            display: none
+            &_second
+              display: none
+      &__third
+        flex-basis: 50%
+        background: #F3FAFF
+        height: calc(100vw / 6.53061224)
+        width: calc(100vw / 2.25352113)
+
+
+
+
+

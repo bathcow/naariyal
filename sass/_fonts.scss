@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Caveat-Regular';
+  src: url('../fonts/Caveat-Regular.eot');
+  src: url('../fonts/Caveat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Caveat-Regular.woff') format('woff'),
+  url('../fonts/Caveat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AvenirNextCyr-Regular';
+  src: url('../fonts/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url('../fonts/TrebuchetMS.eot');
+  src: url('../fonts/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TrebuchetMS.woff') format('woff'),
+  url('../fonts/TrebuchetMS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr-Bold';
+  src: url('../fonts/AvenirNextCyr-Bold.eot');
+  src: url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@mixin avenirbold {
+  font-family: 'AvenirNextCyr-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin avenir {
+  font-family: 'AvenirNextCyr-Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin roman {
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-weight: 400;
+}
+@mixin light {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-weight: 300;
+}
+@mixin book {
+  font-family: 'UniNeueBook', sans-serif;
+  font-weight: 400;
+}
+@mixin caveat {
+  font-family: 'Caveat-Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: 'HelveticaNeueCyr-Bold', sans-serif;
+  font-weight: 700;
+}
+@mixin medium {
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+  font-weight: 400;
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}

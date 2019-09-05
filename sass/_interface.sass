@@ -1,0 +1,129 @@
+
+*
+  box-sizing: border-box
+
+body
+  color: #3C3C3C
+
+h1, h2, h3, h4, h5, h6, p, span
+  margin: 0
+
+a
+  text-decoration: none
+
+a:active, a:focus 
+  outline: none
+
+.button
+  outline: none
+
+button
+  outline: none
+
+
+input
+  border: none
+  background: none
+  outline: none
+  padding: 0
+
+
+.container
+  &-header
+    max-width: 1900px
+    margin: 0 auto
+  &-hero
+    max-width: 1814px
+    margin: 0 auto
+  &-recipies
+    max-width: 1312px
+    margin: 0 auto
+    position: relative
+  &-offer
+    max-width: 1300px
+    margin: 0 auto
+  &-footer
+    max-width: 1335px
+    margin: 0 auto
+  &-recipe
+    max-width: 1312px
+    margin: 0 auto
+
+
+.button
+  cursor: pointer
+  transition: all .3s
+  &:hover
+    &:before
+      background: radial-gradient(435.55px at 100% 0%, #CEF296 0%, #89CD43 100%)
+    &:after
+      background: radial-gradient(435.55px at 100% 0%, #BDDF88 0%, #77B13C 100%)
+    
+
+// @include placeholder
+//   color: #5A5A5A
+//   font-size: 16px
+//   line-height: 22px
+//   +reg
+//   opacity: 1
+
+
+
+@media screen and (min-width: 1921px)
+  .container
+    &-header
+      max-width: calc(100vw / 1.03522267)
+    &-hero
+      max-width: calc(100vw / 1.05836093)
+
+@media screen and (max-width: 1919px)
+  .container
+    &-header
+      max-width: calc(100vw / 1.01052632)
+    &-hero
+      max-width: calc(100vw / 1.0584344)
+    &-recipies
+      max-width: calc(100vw / 1.46341463)
+    &-offer
+      max-width: calc(100vw / 1.47692308)
+    &-footer
+      max-width: calc(100vw / 1.43820224)
+    &-recipe
+      max-width: calc(100vw / 1.46341463)
+
+
+
+
+@media screen and (max-width: 1240px)
+  .container
+    &-header
+      max-width: 1220px
+    &-hero
+      max-width: 1157px
+    &-recipies
+      max-width: 687px
+      &_contacts
+    &-offer
+      max-width: 686px
+    &-footer
+      max-width: 707px
+    &-recipe
+      max-width: 684px
+
+
+
+
+@media screen and (max-width: 480px)
+
+  
+  iframe
+    height: 223px
+  .container
+    &-hero
+      max-width: calc(100vw / 1.18518519)
+    &-recipies
+      max-width: calc(100vw / 1.06312292)
+    &-offer
+      max-width: calc(100vw / 1.25984252)
+    &-recipe
+      max-width: calc(100vw / 1.07023411)

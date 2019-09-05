@@ -1,0 +1,148 @@
+.result
+  overflow: hidden
+  background: url(../img/result-bg.png)
+  padding-top: 104px
+  padding-bottom: 137px
+  &-title
+    margin-bottom: 9px
+    text-align: center
+    font-size: 28px
+    line-height: 30px
+    +heavy
+    text-transform: uppercase
+  &-subtitle
+    margin-bottom: 97px
+    text-align: center
+    +bold
+    font-size: 16px
+    line-height: 22px
+  &-relative
+    position: relative
+    height: 406px
+  &-block
+    position: absolute
+    z-index: 999
+  &-hand
+    width: 936.5px
+    height: 725px
+    position: absolute
+    background: url(../img/hand.png) no-repeat center center
+    background-size: 100%
+    top: -81px
+    right: -544px
+    z-index: 99999999999
+  &-emblem
+    position: absolute
+    width: 543.5px
+    height: 596px
+    background: url(../img/emblem.svg) no-repeat center center
+    background-size: 100%
+    z-index: 10
+    top: -104px
+    left: -192px
+  &-text
+    padding-top: 38px
+    padding-left: 29px
+    padding-bottom: 42px
+    z-index: 9999999999999999
+    position: relative
+    background: rgba(255, 255, 255, 0.93)
+    border-radius: 8px
+    &__title
+      font-size: 23.2px
+      line-height: 137.5%
+      text-transform: uppercase
+      +bold
+      max-width: 570px
+      margin-bottom: 23px
+      &_span
+        color: #406896
+    &__text
+      font-size: 16px
+      line-height: 21px
+      max-width: 500px
+      +book
+      &_first
+        margin-bottom: 21px
+      &_span
+        +bold
+    &__bg
+      background: #ffffff
+      position: absolute
+      z-index: 1
+      height: 406px
+      overflow-y: hidden
+      width: 100vw
+      top: 0
+      left: 0
+      border-radius: 8px
+
+
+
+@media screen and (max-width: 1010px)
+  .result
+    padding-bottom: 77px
+    &-title
+      font-size: 24px
+    &-subtitle
+      font-size: 16px
+    &-hand
+      width: calc(100vw / 0.82007475)
+      height: calc(100vw / 1.05931034)
+    &-text
+      padding-left: 22px
+      padding-bottom: 22px
+      padding-top: 22px
+      &__title
+        font-size: 20px
+        max-width: 360px
+      &__text
+        font-size: 16px
+        max-width: 450px
+    &-emblem
+      background-size: 90%
+      top: -108px
+
+@media screen and (max-width: 480px)
+  .result
+    padding-bottom: calc(100vw / 13.3333333)
+    padding-top: 55px
+    &-title
+      text-align: left
+      margin-bottom: 22px
+      font-size: calc(100vw / 13.3333333)
+    &-subtitle
+      display: none
+    &-hand
+      width: calc(100vw / 0.66666667)
+      height: calc(100vw / 0.456114286)
+      bottom: 0
+      top: -9px
+      left: auto
+      right: calc(-100vw / 2)
+      transform: rotate(8deg)
+    &-block
+      width: 100%
+      position: relative
+    &-emblem
+      top: -64px
+      right: -51px
+      left: auto
+      width: calc(100vw / 2.30215827)
+      height: calc(100vw / 2.10526316)
+    &-text
+      padding-left: calc(100vw / 22.8571429)
+      padding-top: 38px
+      &__bg
+        width: 100%
+        height: 100%
+      &__title
+        margin-bottom: calc(100vw / 0.86486486)
+        font-size: calc(100vw / 20)
+      &__text
+        margin-left: auto
+        margin-right: auto
+        max-width: calc(100vw / 1.17216117)
+        font-size: calc(100vw / 21.33333333)
+    &-relative
+      height: auto

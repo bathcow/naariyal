@@ -1,0 +1,245 @@
+.footer
+  color: #ffffff
+  background: #0D4156
+  padding-top: 45px
+  padding-bottom: 32px
+  &-bar
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+  &-lorem
+    color: #9F9F9F
+    font-size: 14px
+    line-height: 135.72%
+    +roman
+  &-logo
+    margin-right: 50px
+  &-text
+    max-width: 347px
+    margin-right: 60px
+    font-size: 14px
+    line-height: 124.41%
+    +roman
+  &-tel
+    display: flex
+    flex-direction: column
+    margin-right: 60px
+    &__anchor
+      margin-bottom: 3px
+      +roman
+      font-size: 17px
+      line-height: 19px
+      color: #ffffff
+  &-subtitle
+      max-width: 233px
+      font-size: 14px
+      line-height: 18px
+      +roman
+  &-list
+    margin: 0
+    padding: 0
+    &__item
+      display: inline-block
+      margin-right: 70px
+      &_anchor
+        font-size: 16px
+        text-transform: uppercase
+        +bold
+        color: #ffffff
+  &-icon
+    width: 39.85px
+    height: 40px
+    border-radius: 50%
+    &_tablet
+      display: none
+    &_fb
+      background: url(../img/facebook.svg) no-repeat center top
+      background-color: rgba(229, 229, 229, 1)
+      background-position: center center
+      background-size: 30%
+      margin-left: auto
+      margin-right: 25px
+      cursor: pointer
+      &:hover
+        background-color: rgba(229, 229, 229, 0.8)
+    &_twit
+      background: url(../img/twitter.svg) no-repeat center top
+      background-color: #E5E5E5
+      background-position: center center
+      background-size: 45%
+      cursor: pointer
+      &:hover
+        background-color: rgba(229, 229, 229, 0.8)
+    &_inst
+      background: url(../img/instagram.svg) no-repeat center top
+      background-color: #E5E5E5
+      background-position: center center
+      background-size: 45%
+      margin-right: 25px
+      cursor: pointer
+      &:hover
+        background-color: rgba(229, 229, 229, 0.8)
+
+
+
+
+
+@media screen and (max-width: 1919px)
+  .footer
+    padding-top: calc(100vw / 42.66666666666667)
+    padding-bottom: calc(100vw / 60)
+    &-bar
+      margin-bottom: calc(100vw / 38.4)
+    &-lorem
+      font-size: calc(100vw / 137.1428571428571)
+    &-logo
+      margin-right: calc(100vw / 38.4)
+      max-width: calc(100vw / 7.058823529411765)
+    &-text
+      max-width: calc(100vw / 5.53314121037464)
+      margin-right: calc(100vw / 32)
+      font-size: calc(100vw / 137.1428571428571)
+    &-tel
+      margin-right: calc(100vw / 32)
+      &__anchor
+        margin-bottom: calc(100vw / 640)
+        font-size: calc(100vw / 112.9411764705882)
+        line-height: calc(100vw / 101.0526315789474)
+    &-subtitle
+        max-width: calc(100vw / 8.240343347639485)
+        font-size: calc(100vw / 137.1428571428571)
+        line-height: calc(100vw / 106.6666666666667)
+    &-list
+      &__item
+        margin-right: calc(100vw / 27.42857142857143)
+        &_anchor
+          font-size: calc(100vw / 120)
+    &-icon
+      width: calc(100vw / 48.18067754077792)
+      height: calc(100vw / 48)
+      &_fb
+        background-size: 30%
+        margin-right: calc(100vw / 76.8)
+      &_twit
+        background-size: 45%
+      &_inst
+        background-size: 45%
+        margin-right: calc(100vw / 76.8)
+
+
+
+@media screen and (max-width: 1919px)
+  .footer
+    padding-top: 29px
+    padding-bottom: 20px
+    &-bar
+      margin-bottom: 40px
+      &:last-child
+        margin-bottom: 23px
+    &-icon
+      &_desktop
+        display: none
+      &_tablet
+        display: block
+    &-text
+      margin-right: 51px
+      font-size: 11px
+      line-height: 124.41%
+      max-width: 134px
+    &-tel
+      margin-right: 47px
+      &__anchor
+        font-size: 14px
+        margin-bottom: 6px
+        line-height: 100%
+    &-subtitle
+      font-size: 11px
+      line-height: 125.95%
+      max-width: 126px
+    &-list
+      &__item
+        margin-right: 40px
+        font-size: 11px
+        &:last-child
+          margin-right: 0
+        &_anchor
+          font-size: 11px
+    &-logo
+      margin-right: 57px
+      max-width: 167px
+
+
+
+@media screen and (max-width: 480px)
+  .footer
+    padding-top: calc(100vw / 9.14285714)
+    padding-bottom: calc(100vw / 16)
+    &-logo
+      margin-right: calc(100vw / 29.0909091)
+      max-width: calc(100vw / 1.6)
+    &-bar
+      display: flex
+      flex-direction: column
+      margin-bottom: calc(100vw / 80)
+    &-text
+      margin-right: 0
+      font-size: calc(100vw / 24.6153846)
+      line-height: 135.91%
+      max-width: calc(100vw / 1.07023411)
+      margin-bottom: calc(100vw / 11.8518519)
+    &-tel
+      margin-right: calc(100vw / 1.83908046)
+      margin-bottom: calc(100vw / 15.2380952)
+      &__anchor
+        margin-bottom: calc(100vw / 32)
+    &-subtitle
+      font-size: calc(100vw / 24.6153846)
+      max-width: calc(100vw / 1.19850187)
+      margin-right: calc(100vw / 11.8518519)
+    &-lorem
+      font-size: calc(100vw / 35.5555556)
+      line-height: 135.72%
+      margin-top: calc(100vw / 15.2380952)
+      margin-left: auto
+      margin-right: auto
+      max-width: calc(100vw / 1.07744108)
+    &-list
+      margin-top: calc(100vw / 6.2745098)
+      display: flex
+      flex-direction: column
+      margin-right: auto
+      margin-left: calc(100vw / 21.3333333)
+      &__item
+        font-size: calc(100vw / 22.8571429)
+        text-transform: uppercase
+        +bold
+        margin-bottom: calc(100vw / 16.8421053)
+        &_anchor
+          +bold
+          font-size: calc(100vw / 22.8571429)
+          text-transform: uppercase
+    &-icon
+      width: calc(100vw / 8)
+      height: calc(100vw / 8)
+      &_tablet
+        display: none
+      &_fb
+        margin: 0
+        margin-right: calc(100vw / 2.01257862)
+        transform: translateY(calc(100vw / 8))
+        margin-top: calc(100vw / 15.2380952)
+        width: calc(100vw / 7.80487805)
+        height: calc(100vw / 7.80487805)
+      &_inst
+        margin: 0
+        transform: translateX(calc(-100vw / 32))
+        width: calc(100vw / 7.80487805)
+        height: calc(100vw / 7.80487805)
+      &_twit
+        margin: 0
+        margin-left: calc(100vw / 2.75862069)
+        transform: translateY(calc(-100vw / 8))
+        width: calc(100vw / 7.80487805)
+        height: calc(100vw / 7.80487805)
+      &_desktop
+        display: block
